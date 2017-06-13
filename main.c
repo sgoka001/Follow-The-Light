@@ -1,3 +1,18 @@
+/*  Name & E-mail: Srisri Gokanapudy & sgoka001@ucr.edu
+*   Project: Follow The Light
+*
+*   I acknowledge all content contained herein, excluding template or example
+*   code, is my own original work.
+*/
+#define F_CPU 1000000UL
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <avr/pgmspace.h>
+#include <util/delay.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <headers.c>
+
 //Global Variables for all state machines
 unsigned char up_down, left_right; //hold ud and lr values to set the position
 unsigned char position = 0;		//1 up 2 down 3 left 4 right 0 nothing
